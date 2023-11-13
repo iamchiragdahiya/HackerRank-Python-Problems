@@ -1,0 +1,26 @@
+# Check if the script is being run as the main program
+if __name__ == '__main__':
+    # Get the number of students from the user
+    n = int(input())
+
+    # Create a dictionary to store student names and their respective marks
+    student_marks = {}
+
+    # Loop to input student names and marks
+    for _ in range(n):
+        # Input format: name mark1 mark2 mark3 ...
+        # Use *line to capture the rest of the input as a list
+        name, *line = input().split()
+
+        # Convert the list of marks to a list of floats
+        scores = list(map(float, line))
+
+        # Store the student's name and marks in the dictionary
+        student_marks[name] = scores
+
+    # Get the name of the student for whom average marks need to be calculated
+    query_name = input()
+
+    # Calculate and print the average marks for the specified student
+    # Use format to display the result with two decimal places
+    print(format(sum(student_marks[query_name]) / len(student_marks[query_name]), '.2f'))
