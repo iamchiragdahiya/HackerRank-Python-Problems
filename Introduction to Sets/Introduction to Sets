@@ -1,0 +1,8 @@
+Complete the average function in the editor below.
+
+average has the following parameters:
+
+int arr: an array of integers
+Returns
+
+float: the resulting float value rounded to 3 places after the decimal
