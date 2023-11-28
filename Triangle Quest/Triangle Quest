@@ -1,0 +1,11 @@
+Write a Python script that prints the following pattern:
+1
+22
+333
+4444
+55555
+......
+
+Constraints
+Use no more than 2 lines of code.
+Do not use any string methods.
