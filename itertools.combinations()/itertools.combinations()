@@ -1,0 +1,2 @@
+You are given a string S.
+Your task is to print all possible combinations, up to size K, of the string in lexicographic sorted order.
